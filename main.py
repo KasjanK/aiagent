@@ -15,7 +15,6 @@ def main():
     client = genai.Client(api_key=api_key)
 
     user_prompt = sys.argv[1]
-   
     messages = [
         types.Content(role="user", parts=[types.Part(text=user_prompt)]),
     ]
