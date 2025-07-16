@@ -19,6 +19,16 @@ The core agent sends your prompt and relevant code context to a large language m
 - Reads project structure and tracks which files to edit
 - Modular, allowing for extensions and customization
 
+## Example output
+
+# Example Output
+
+This project includes a test Python program called `calculator` to demonstrate its capabilities.
+
+Below is an example output. The agent was prompted with:
+
+![Agent responds to prompt about calculator rendering](example_output.png)
+
 ---
 
 This project is for demonstration and learning purposes only.
