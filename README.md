@@ -1,37 +1,24 @@
 # Agentic Python Coding Assistant
 
-A simple Python project that demonstrates building a local agent capable of assisting with code, answering questions, and making real edits to a codebase. This project is inspired by agentic developer tools such as Cursor, Zed's Agentic Mode, and Claude Code.
+This project demonstrates a simple "agent" that can read, modify, and reason about code in a local Python project. It uses a large language model (LLM) to interpret user instructions and automatically make changes to source files.
+
+## What it Does
+
+- Accepts instructions from the user via a command-line interface
+- Reads and analyzes existing Python code
+- Proposes and applies code edits, such as fixing bugs or refactoring functions
+
+## How it Works
+
+The core agent sends your prompt and relevant code context to a large language model, receives back suggested modifications, and then applies those changes to your local files. The agent loops through this process until your tasks are complete.
 
 ## Features
 
-- Reads and interprets Python code from your project
-- Receives instructions via a CLI prompt
-- Makes direct, automatic edits to your local code files
-- Handles bug fixes and simple refactoring
-- Modular, allowing extension with new tools or LLMs
+- Edits local files based on natural language instructions
+- Can fix simple bugs or update function bodies
+- Reads project structure and tracks which files to edit
+- Modular, allowing for extensions and customization
 
-## Getting Started
+---
 
-### Prerequisites
-
-- Python 3.10+ installed
-- uv project and package manager
-- Access to a Unix-like shell (e.g. zsh or bash)
-
-### Usage
-
-1. Run the agent from the terminal:
-    ```sh
-    uv run main.py "<prompt>"
-    ```
-2. Follow the prompts to interact with your agent and give it coding tasks.
-
-## Security Notice
-
-**WARNING:** This project is a toy demonstration and not production-ready. Granting automatic file edit access is dangerous! Do not use this agent on sensitive or uncommitted code, and never share this agent code with others.
-
-## Extending
-
-- Try upgrading to more powerful Gemini models or testing with other LLM providers
-- Experiment with bigger codebases
-- Add new function-calling tools for enhanced interaction
+This project is for demonstration and learning purposes only.
