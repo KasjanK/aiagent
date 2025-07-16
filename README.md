@@ -27,7 +27,7 @@ This project includes a test Python program called `calculator` to demonstrate i
 
 Below is an example output. The agent was prompted with:
 
-![Agent responds to prompt about calculator rendering](example_output.png)
+![Agent responds to prompt about calculator rendering](example_output.PNG)
 
 ---
 
